@@ -1,11 +1,9 @@
 # Spring Data JPA Inheritance
 
-This repository contains source code examples to support my course [Hibernate and Spring Data JPA Beginner to Guru](https://www.udemy.com/course/hibernate-and-spring-data-jpa-beginner-to-guru/?referralCode=251C4C865302C7B1BB8F)
+Section 20: @Inheritance(strategy = InheritanceType.<TABLE_PER_CLASS | SINGLE_TABLE ...>)
+MappedSuperClass -> one table,
+Table Per Class -> with  GenerationType.IDENTITY cause  MappingException: Cannot use identity column key. One table each entity
+Single Table -> added @DiscriminatorColumn, Single table model with a column having the type that is being persisted
+Joined Table -> multiple tables with join based on the ID's or any other attribute 
 
-## Connect with Spring Framework Guru
-* Spring Framework Guru [Blog](https://springframework.guru/)
-* Subscribe to Spring Framework Guru on [YouTube](https://www.youtube.com/channel/UCrXb8NaMPQCQkT8yMP_hSkw)
-* Like Spring Framework Guru on [Facebook](https://www.facebook.com/springframeworkguru/)
-* Follow Spring Framework Guru on [Twitter](https://twitter.com/spring_guru)
-* Connect with John Thompson on [LinkedIn](http://www.linkedin.com/in/springguru)
 
